@@ -10,7 +10,7 @@ public class OTPGenerator {
 			throw new IllegalArgumentException("OTP length must be a positive integer.");
 		}
 
-		String characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVW";
 		SecureRandom secureRandom = new SecureRandom();   //object creation fot in built method taken fron java-.lib
 		StringBuilder otp = new StringBuilder(length);     // object creation for 8 th line
 
@@ -32,6 +32,7 @@ public class OTPGenerator {
 		String c = sc.next();
 		if (c.compareTo(otp)==0) {
 			System.out.println("WELCOME TO THE ZOO");
+			System.out.println("hello njoy");
 		}
 	}
 }
